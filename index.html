@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibadan Life Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f2f2f2;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    button {
+      padding: 15px 25px;
+      margin: 8px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #222;
+      color: white;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🇳🇬 Ibadan Life Game</h1>
+
+  <p>Welcome to Ibadan! What do you want to do?</p>
+
+  <button onclick="goToSchool()">Go to School</button>
+  <button onclick="getJob()">Find a Job</button>
+  <button onclick="explore()">Explore Ibadan</button>
+
+  <div id="result"></div>
+
+  <script>
+    function goToSchool() {
+      document.getElementById("result").innerHTML =
+        "📚 You went to school and learned something new!";
+    }
+
+    function getJob() {
+      document.getElementById("result").innerHTML =
+        "💼 You found a small job in Ibadan!";
+    }
+
+    function explore() {
+      document.getElementById("result").innerHTML =
+        "🏙️ You explored Ibadan and discovered a new place!";
+    }
+  </script>
+
+</body>
+  </html>
